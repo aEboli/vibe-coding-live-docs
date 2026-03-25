@@ -18,7 +18,7 @@
 
 ## 这是什么
 
-`vibe-coding-live-docs` 是一个面向 Codex 的 skill。
+`vibe-coding-live-docs` 是一个skill。
 
 它解决的是一个很常见、但很容易被忽略的问题：
 
