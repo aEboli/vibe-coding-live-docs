@@ -1,0 +1,7 @@
+interface:
+  display_name: "Vibe Coding Live Docs"
+  short_description: "Keep project docs alive from Draft to As-Built"
+  icon_small: "./assets/vibe-coding-live-docs-small.svg"
+  icon_large: "./assets/vibe-coding-live-docs.svg"
+  brand_color: "#0F766E"
+  default_prompt: "Use $vibe-coding-live-docs to scaffold or repair living project docs for a new project or large feature."

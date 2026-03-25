@@ -1,0 +1,51 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="60" x2="840" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FAF7"/>
+      <stop offset="1" stop-color="#F7F8FC"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="shadow" x="174" y="72" width="612" height="396" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0901961 0 0 0 0 0.164706 0 0 0 0.1 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="540" rx="28" fill="url(#bg)"/>
+  <circle cx="162" cy="116" r="70" fill="#D6F5EA"/>
+  <circle cx="808" cy="424" r="82" fill="#E6F0FF"/>
+
+  <g filter="url(#shadow)">
+    <rect x="210" y="108" width="540" height="324" rx="28" fill="url(#card)"/>
+    <rect x="252" y="148" width="196" height="236" rx="20" fill="#FFFFFF" stroke="#DCE7E1" stroke-width="2"/>
+    <rect x="474" y="148" width="236" height="104" rx="20" fill="#FFFFFF" stroke="#DBE6F3" stroke-width="2"/>
+    <rect x="474" y="278" width="236" height="106" rx="20" fill="#FFFFFF" stroke="#E6E0F5" stroke-width="2"/>
+
+    <rect x="274" y="172" width="92" height="28" rx="14" fill="#0F766E" fill-opacity="0.12"/>
+    <text x="320" y="191" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#115E59">Draft</text>
+    <rect x="274" y="218" width="152" height="12" rx="6" fill="#1F2937"/>
+    <rect x="274" y="242" width="118" height="12" rx="6" fill="#94A3B8"/>
+    <rect x="274" y="282" width="118" height="12" rx="6" fill="#CBD5E1"/>
+    <rect x="274" y="306" width="136" height="12" rx="6" fill="#CBD5E1"/>
+
+    <rect x="496" y="172" width="122" height="28" rx="14" fill="#D97706" fill-opacity="0.12"/>
+    <text x="557" y="191" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#B45309">Confirmed</text>
+    <rect x="496" y="218" width="174" height="12" rx="6" fill="#1F2937"/>
+
+    <rect x="496" y="302" width="110" height="28" rx="14" fill="#4F46E5" fill-opacity="0.12"/>
+    <text x="551" y="321" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#4338CA">As-Built</text>
+    <rect x="496" y="348" width="160" height="12" rx="6" fill="#1F2937"/>
+
+    <path d="M448 198H470" stroke="#0F766E" stroke-width="4" stroke-linecap="round"/>
+    <path d="M448 328H470" stroke="#4F46E5" stroke-width="4" stroke-linecap="round"/>
+    <path d="M430 198L444 188V208L430 198Z" fill="#0F766E"/>
+    <path d="M430 328L444 318V338L430 328Z" fill="#4F46E5"/>
+  </g>
+
+  <text x="480" y="475" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#0F172A">Living docs for projects that keep moving</text>
+</svg>
