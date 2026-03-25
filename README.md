@@ -12,6 +12,10 @@
   </p>
 </div>
 
+<p align="center">
+  简体中文 · <a href="#english">English</a>
+</p>
+
 ## 这是什么
 
 `vibe-coding-live-docs` 是一个面向 Codex 的 skill。
@@ -139,3 +143,99 @@ vibe-coding-live-docs/
   - 面向 AI 驱动的高迭代开发场景
 - `Live Docs`
   - 文档不是一次性产物，而是持续演进的项目基础设施
+
+---
+
+## English
+
+### What This Is
+
+`vibe-coding-live-docs` is a Codex skill for teams and solo builders who want project documentation to evolve with the product instead of freezing at kickoff.
+
+It solves a familiar problem:
+
+> Early in a project, the PRD, stack notes, page structure, and module plan look neat and complete.  
+> Once the product starts moving, the implementation changes but the docs stay behind.
+
+This skill is designed to keep those artifacts alive through the whole delivery cycle.
+
+### Core Idea
+
+Documentation should not be treated as a binary state of "written" or "missing." It should move through three stages:
+
+- `Draft`
+  - Capture the structure early without pretending every detail is settled.
+- `Confirmed`
+  - Refill and tighten the docs once the first runnable version and major decisions are stable.
+- `As-Built`
+  - Record what actually shipped, what changed, and what risk remains before release or handoff.
+
+### What The Skill Includes
+
+| Module | Purpose |
+| --- | --- |
+| `SKILL.md` | Trigger conditions, workflow, document contract, common mistakes |
+| `references/living-docs-playbook.md` | Full living-docs doctrine |
+| `references/update-matrix.md` | Milestone and event-based update matrix |
+| `assets/templates/` | Templates for `PRD`, `ARCHITECTURE`, `PROJECT_STATE`, `PAGE_FRAME`, `TECH_DECISIONS`, and support docs |
+| `agents/openai.yaml` | UI metadata for environments that support skill catalogs |
+
+### Best For
+
+- Starting a new project
+- Repairing drifting docs in an existing project
+- Adding a large feature or core workflow
+- Projects where page structure, tech choices, and module boundaries keep moving
+- Teams that want strong documentation without locking every detail too early
+
+### Document Ownership
+
+| Document | Owns |
+| --- | --- |
+| `PRD.md` | Product intent, user journeys, acceptance, page summary |
+| `ARCHITECTURE.md` | Current architecture, module responsibilities, data flow, shipped structure |
+| `PROJECT_STATE.md` | Current slice, document debt, latest confirmations, next refill point |
+| `PAGE_FRAME.md` | Page inventory, navigation, key states, transitions |
+| `TECH_DECISIONS.md` | Chosen options, rejected options, constraints, decision dates |
+
+### Install
+
+#### Codex
+
+1. Clone this repository.
+2. Copy `skills/vibe-coding-live-docs/` into `~/.codex/skills/`.
+3. Invoke it explicitly:
+
+```text
+Use $vibe-coding-live-docs to scaffold or repair living project docs for this project.
+```
+
+#### Claude Code / Other Agent Skills Environments
+
+Place `skills/vibe-coding-live-docs/` into the personal skills directory used by that environment.
+
+### Example Prompts
+
+```text
+Use $vibe-coding-live-docs to set up Draft docs for a new SaaS admin dashboard.
+```
+
+```text
+Use $vibe-coding-live-docs to repair drifting docs after the project already has a runnable MVP.
+```
+
+```text
+Use $vibe-coding-live-docs to upgrade our docs from Confirmed to As-Built before release.
+```
+
+### Naming
+
+- Repository: `vibe-coding-live-docs`
+- Skill: `vibe-coding-live-docs`
+
+The name emphasizes two things:
+
+- `Vibe Coding`
+  - High-iteration, AI-assisted product development
+- `Live Docs`
+  - Documentation as living infrastructure, not a one-time artifact
