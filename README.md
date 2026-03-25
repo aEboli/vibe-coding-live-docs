@@ -150,7 +150,7 @@ vibe-coding-live-docs/
 
 ### What This Is
 
-`vibe-coding-live-docs` is a Codex skill for teams and solo builders who want project documentation to evolve with the product instead of freezing at kickoff.
+`vibe-coding-live-docs` is a skill for teams and solo builders who want project documentation to evolve with the product instead of freezing at kickoff.
 
 It solves a familiar problem:
 
