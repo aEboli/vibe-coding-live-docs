@@ -120,7 +120,6 @@ vibe-coding-live-docs/
       assets/
         vibe-coding-live-docs.svg
         vibe-coding-live-docs-small.svg
-        templates/` 创建项目文档模板，默认输出到 `project-docs/`
         templates/
           PRD.md.template
           ARCHITECTURE.md.template
@@ -131,6 +130,20 @@ vibe-coding-live-docs/
           QUALITY_GATE.md.template
           references/
             README.md.template
+```
+
+这些模板默认用于生成同一目录下的项目文档：
+
+```text
+project-docs/
+  PRD.md
+  ARCHITECTURE.md
+  PROJECT_STATE.md
+  PAGE_FRAME.md
+  TECH_DECISIONS.md
+  DEVELOPMENT_RULES.md
+  QUALITY_GATE.md
+  references/
 ```
 
 ## 命名说明
