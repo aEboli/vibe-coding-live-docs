@@ -69,11 +69,11 @@ flowchart LR
 
 | 文档 | 负责什么 |
 | --- | --- |
-| `PRD.md` | 产品目标、用户流程、验收口径、页面摘要 |
-| `ARCHITECTURE.md` | 当前架构结论、模块职责、关键数据流、落地结构 |
-| `PROJECT_STATE.md` | 当前切片、文档待补项、最近确认事项、下一个回填节点 |
-| `PAGE_FRAME.md` | 页面清单、导航、关键状态、页面跳转 |
-| `TECH_DECISIONS.md` | 技术选型、放弃方案、约束原因、确认日期 |
+| `project-docs/PRD.md` | 产品目标、用户流程、验收口径、页面摘要 |
+| `project-docs/ARCHITECTURE.md` | 当前架构结论、模块职责、关键数据流、落地结构 |
+| `project-docs/PROJECT_STATE.md` | 当前切片、文档待补项、最近确认事项、下一个回填节点 |
+| `project-docs/PAGE_FRAME.md` | 页面清单、导航、关键状态、页面跳转 |
+| `project-docs/TECH_DECISIONS.md` | 技术选型、放弃方案、约束原因、确认日期 |
 
 ## 安装
 
@@ -120,6 +120,7 @@ vibe-coding-live-docs/
       assets/
         vibe-coding-live-docs.svg
         vibe-coding-live-docs-small.svg
+        templates/` 创建项目文档模板，默认输出到 `project-docs/`
         templates/
           PRD.md.template
           ARCHITECTURE.md.template
@@ -192,11 +193,11 @@ Documentation should not be treated as a binary state of "written" or "missing."
 
 | Document | Owns |
 | --- | --- |
-| `PRD.md` | Product intent, user journeys, acceptance, page summary |
-| `ARCHITECTURE.md` | Current architecture, module responsibilities, data flow, shipped structure |
-| `PROJECT_STATE.md` | Current slice, document debt, latest confirmations, next refill point |
-| `PAGE_FRAME.md` | Page inventory, navigation, key states, transitions |
-| `TECH_DECISIONS.md` | Chosen options, rejected options, constraints, decision dates |
+| `project-docs/PRD.md` | Product intent, user journeys, acceptance, page summary |
+| `project-docs/ARCHITECTURE.md` | Current architecture, module responsibilities, data flow, shipped structure |
+| `project-docs/PROJECT_STATE.md` | Current slice, document debt, latest confirmations, next refill point |
+| `project-docs/PAGE_FRAME.md` | Page inventory, navigation, key states, transitions |
+| `project-docs/TECH_DECISIONS.md` | Chosen options, rejected options, constraints, decision dates |
 
 ### Install
 

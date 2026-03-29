@@ -11,10 +11,10 @@ Keep project docs alive from the first sketch to the shipped system. This skill 
 
 ## Quick Start
 
-- Create `PRD.md`, `ARCHITECTURE.md`, and `PROJECT_STATE.md` as `Draft` skeletons at project start.
-- For UI or multi-page work, also create `PAGE_FRAME.md`.
-- For non-trivial stack choices, also create `TECH_DECISIONS.md`.
-- Use `PROJECT_STATE.md` as the document-sync control tower: track doc debt, latest confirmations, next refill node, and frozen decisions.
+- Create `project-docs/PRD.md`, `project-docs/ARCHITECTURE.md`, and `project-docs/PROJECT_STATE.md` as `Draft` skeletons at project start.
+- For UI or multi-page work, also create `project-docs/PAGE_FRAME.md`.
+- For non-trivial stack choices, also create `project-docs/TECH_DECISIONS.md`.
+- Use `project-docs/PROJECT_STATE.md` as the document-sync control tower: track doc debt, latest confirmations, next refill node, and frozen decisions.
 - Update docs on milestones and key events instead of waiting until release.
 
 ## Lifecycle
@@ -44,15 +44,15 @@ Update the right docs when these triggers happen:
 
 ## Document Contract
 
-- `PRD.md`
+- `project-docs/PRD.md`
   - Product intent, user journeys, acceptance, page summary
-- `ARCHITECTURE.md`
+- `project-docs/ARCHITECTURE.md`
   - Current architecture, modules, data flow, auth, and as-built structure
-- `PROJECT_STATE.md`
+- `project-docs/PROJECT_STATE.md`
   - Current slice, document debt, next update node, frozen decisions
-- `PAGE_FRAME.md`
+- `project-docs/PAGE_FRAME.md`
   - Page inventory, navigation, key states, transitions
-- `TECH_DECISIONS.md`
+- `project-docs/TECH_DECISIONS.md`
   - Chosen options, rejected options, constraints, decision dates
 
 ## Workflow
@@ -62,7 +62,7 @@ Update the right docs when these triggers happen:
 3. Put uncertain information in `Draft` instead of pretending it is final.
 4. Promote sections to `Confirmed` when real implementation or decisions stabilize them.
 5. Promote key docs to `As-Built` before release, handoff, or major milestone closeout.
-6. Keep decision history in `TECH_DECISIONS.md` and UI structure in `PAGE_FRAME.md` so `PRD.md` and `ARCHITECTURE.md` stay readable.
+6. Keep decision history in `project-docs/TECH_DECISIONS.md` and UI structure in `project-docs/PAGE_FRAME.md` so `project-docs/PRD.md` and `project-docs/ARCHITECTURE.md` stay readable.
 
 ## Resources
 

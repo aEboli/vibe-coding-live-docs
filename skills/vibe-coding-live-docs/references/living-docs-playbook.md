@@ -12,32 +12,32 @@
 
 ### 主文档
 
-- `PRD.md`
+- `project-docs/PRD.md`
   - 负责“做什么”和“怎么验收”。
   - 保留产品目标、目标用户、关键流程、验收标准和页面摘要。
-- `ARCHITECTURE.md`
+- `project-docs/ARCHITECTURE.md`
   - 负责“怎么实现”和“为什么这样落地”。
   - 保留当前架构结论、模块职责、关键数据流、服务端逻辑和真实落地结构。
-- `PROJECT_STATE.md`
+- `project-docs/PROJECT_STATE.md`
   - 负责“当前推进到哪里、哪些文档还没补齐、下一次该补什么”。
   - 它是文档同步总控台，不只是开发进度表。
 
 ### 附录文档
 
-- `PAGE_FRAME.md`
+- `project-docs/PAGE_FRAME.md`
   - UI 或多页面项目启用。
   - 集中维护页面清单、导航结构、页面状态、跳转关系、关键参考。
-- `TECH_DECISIONS.md`
+- `project-docs/TECH_DECISIONS.md`
   - 存在非平凡技术选择时启用。
   - 集中维护技术栈定稿、关键库选择、放弃方案、约束原因和确认时间。
 
 ### 支撑文档
 
-- `DEVELOPMENT_RULES.md`
+- `project-docs/DEVELOPMENT_RULES.md`
   - 记录语言/框架约束、模块拆分约束、修改边界、安全底线和调试规则。
-- `QUALITY_GATE.md`
+- `project-docs/QUALITY_GATE.md`
   - 记录版本管理、验证要求、代码审查、发布前检查和文档收敛检查。
-- `references/`
+- `project-docs/references/`
   - 存放可信参考资料、实现示例、设计参考和外部来源。
 
 ## 三阶段活文档
@@ -112,7 +112,7 @@
   - 一段需求摘要。
   - 一个可验证的目标描述。
 - 生命周期要求：
-  - 写入 `PRD.md` 的 `Draft` 骨架。
+  - 写入 `project-docs/PRD.md` 的 `Draft` 骨架。
   - 明确哪些问题尚未确认，不要求一次定完。
 
 #### 步骤 2：整理 PRD 并定初版验收标准
@@ -123,7 +123,7 @@
   - 用户流程从哪开始、到哪结束。
   - 每个功能怎样算完成。
 - 最少要产出什么：
-  - `PRD.md` 的 `Draft` 版本。
+  - `project-docs/PRD.md` 的 `Draft` 版本。
   - 初版验收标准和待确认项。
 - 生命周期要求：
   - 到“核心流程稳定”时，把初版验收标准收敛到 `Confirmed`。
@@ -137,8 +137,8 @@
   - 页面框架是否已有约束。
   - 有没有参考网站或现成设计系统。
 - 最少要产出什么：
-  - `PRD.md` 中的页面/导航摘要。
-  - UI 项目的 `PAGE_FRAME.md` 骨架。
+  - `project-docs/PRD.md` 中的页面/导航摘要。
+  - UI 项目的 `project-docs/PAGE_FRAME.md` 骨架。
 - 生命周期要求：
   - `Draft` 只要求页面草图、导航草案、关键页面列表。
   - 首个可运行版本后回填真实页面清单、导航和状态。
@@ -157,7 +157,7 @@
   - 边界说明。
   - 非功能需求列表。
 - 生命周期要求：
-  - 先写入 `ARCHITECTURE.md` 的 `Draft` 区域。
+  - 先写入 `project-docs/ARCHITECTURE.md` 的 `Draft` 区域。
   - 只要鉴权、数据流或性能约束发生变化，必须事件触发回填。
 
 #### 步骤 5：锁定可验证技术栈，但允许先保留候选方案
@@ -167,11 +167,11 @@
   - 当前团队或项目已有技术约束是什么。
   - 哪套方案最容易验证、资料最全、工具链最成熟。
 - 最少要产出什么：
-  - `ARCHITECTURE.md` 中的“候选 vs 已确认技术栈”。
-  - 非简单项目的 `TECH_DECISIONS.md` 骨架。
+  - `project-docs/ARCHITECTURE.md` 中的“候选 vs 已确认技术栈”。
+  - 非简单项目的 `project-docs/TECH_DECISIONS.md` 骨架。
 - 生命周期要求：
   - `Draft` 允许保留候选方案。
-  - 技术栈一旦定稿，立即写进 `TECH_DECISIONS.md`，并同步 `ARCHITECTURE.md` 当前结论。
+  - 技术栈一旦定稿，立即写进 `project-docs/TECH_DECISIONS.md`，并同步 `project-docs/ARCHITECTURE.md` 当前结论。
 
 #### 步骤 6：让架构从草案走向真实落地
 
@@ -181,11 +181,11 @@
   - 核心模块有哪些。
   - 数据模型和服务端职责怎么划。
 - 最少要产出什么：
-  - `ARCHITECTURE.md` 的模块边界草案。
-  - `PROJECT_STATE.md` 里的文档待补项。
+  - `project-docs/ARCHITECTURE.md` 的模块边界草案。
+  - `project-docs/PROJECT_STATE.md` 里的文档待补项。
 - 生命周期要求：
   - 首个可运行版本后回填初版真实目录和模块。
-  - 核心模块边界变化时，立即更新 `ARCHITECTURE.md` 和 `PROJECT_STATE.md`。
+  - 核心模块边界变化时，立即更新 `project-docs/ARCHITECTURE.md` 和 `project-docs/PROJECT_STATE.md`。
   - 发布前补 `As-Built` 结构和偏差原因。
 
 ### 阶段 3：立规矩
@@ -194,11 +194,11 @@
 
 - 何时触发：项目启动时立即触发，最晚不超过第一个切片完成前。
 - 最少要产出什么：
-  - `PRD.md`
-  - `ARCHITECTURE.md`
-  - `PROJECT_STATE.md`
+  - `project-docs/PRD.md`
+  - `project-docs/ARCHITECTURE.md`
+  - `project-docs/PROJECT_STATE.md`
 - 生命周期要求：
-  - `PROJECT_STATE.md` 必须增加：
+  - `project-docs/PROJECT_STATE.md` 必须增加：
     - 文档待补项
     - 最近确认事项
     - 下一次回填节点
@@ -209,8 +209,8 @@
 
 - 何时触发：准备正式开发前。
 - 最少要产出什么：
-  - `DEVELOPMENT_RULES.md`
-  - `references/`
+  - `project-docs/DEVELOPMENT_RULES.md`
+  - `project-docs/references/`
 - 生命周期要求：
   - 如果项目中新增特殊约束或可信参考，要跟着项目迭代同步补充，而不是只在开头写一次。
 
@@ -218,7 +218,7 @@
 
 - 何时触发：第一次提交前。
 - 最少要产出什么：
-  - `QUALITY_GATE.md`
+  - `project-docs/QUALITY_GATE.md`
 - 生命周期要求：
   - 把文档状态检查纳入质量闸门：
     - 项目启动后是否已创建 `Draft` 骨架
@@ -227,7 +227,7 @@
 
 ## 每份文档怎么写才更完整
 
-### `PRD.md`
+### `project-docs/PRD.md`
 
 - `Draft` 至少包含：
   - 目标用户
@@ -247,7 +247,7 @@
   - 删减项
   - 保留风险
 
-### `ARCHITECTURE.md`
+### `project-docs/ARCHITECTURE.md`
 
 - `Draft` 至少包含：
   - 候选技术栈
@@ -266,7 +266,7 @@
   - 真实模块和依赖
   - 偏离原草案的原因
 
-### `PROJECT_STATE.md`
+### `project-docs/PROJECT_STATE.md`
 
 - 必须长期维护：
   - 当前目标
@@ -308,16 +308,16 @@
 
 ### 项目启动
 
-- 创建 `PRD.md`、`ARCHITECTURE.md`、`PROJECT_STATE.md` 的 `Draft` 骨架。
-- UI 项目创建 `PAGE_FRAME.md`。
-- 技术不简单的项目创建 `TECH_DECISIONS.md`。
+- 创建 `project-docs/PRD.md`、`project-docs/ARCHITECTURE.md`、`project-docs/PROJECT_STATE.md` 的 `Draft` 骨架。
+- UI 项目创建 `project-docs/PAGE_FRAME.md`。
+- 技术不简单的项目创建 `project-docs/TECH_DECISIONS.md`。
 
 ### 首个可运行版本
 
 - 回填真实页面框架。
 - 回填首版技术栈。
 - 回填初版核心模块。
-- 在 `PROJECT_STATE.md` 中清掉一批文档待补项。
+- 在 `project-docs/PROJECT_STATE.md` 中清掉一批文档待补项。
 
 ### 核心流程稳定
 
@@ -330,7 +330,7 @@
 
 - 将主文档收敛为 `As-Built`。
 - 补齐实际偏差和剩余风险。
-- 在 `QUALITY_GATE.md` 里完成文档收敛检查。
+- 在 `project-docs/QUALITY_GATE.md` 里完成文档收敛检查。
 
 ## 开发中 5 个核心关键点
 
@@ -338,7 +338,7 @@
 
 - 任何需求都优先拆成可验证切片。
 - 每完成一个切片就做一次端到端验证，再进入下一个切片。
-- 验证结果要同步进 `PROJECT_STATE.md`，而不是只留在聊天记录里。
+- 验证结果要同步进 `project-docs/PROJECT_STATE.md`，而不是只留在聊天记录里。
 
 ### 2. 人类主动拆分模块，禁止“一坨代码”
 
@@ -379,13 +379,13 @@
 2. 写清修改范围和不改范围。
 3. 检查是否涉及敏感信息、数据流、权限或副作用。
 4. 拆成最小切片并逐个验证。
-5. 更新 `PROJECT_STATE.md` 或最小状态摘要。
+5. 更新 `project-docs/PROJECT_STATE.md` 或最小状态摘要。
 
 如果精简任务实际触发以下变化，必须升级更新对应文档：
 
-- 页面框架变化 -> 更新 `PAGE_FRAME.md` 和 `PRD.md` 摘要
-- 技术栈变化 -> 更新 `TECH_DECISIONS.md` 和 `ARCHITECTURE.md`
-- 模块边界变化 -> 更新 `ARCHITECTURE.md` 和 `PROJECT_STATE.md`
+- 页面框架变化 -> 更新 `PAGE_FRAME.md` 和 `project-docs/PRD.md` 摘要
+- 技术栈变化 -> 更新 `TECH_DECISIONS.md` 和 `project-docs/ARCHITECTURE.md`
+- 模块边界变化 -> 更新 `project-docs/ARCHITECTURE.md` 和 `project-docs/PROJECT_STATE.md`
 
 ## 止损规则
 
@@ -406,13 +406,13 @@
 ## 推荐产物
 
 - 新项目或大功能：
-  - `PRD.md`
-  - `ARCHITECTURE.md`
-  - `PROJECT_STATE.md`
-  - `PAGE_FRAME.md`（按需）
-  - `TECH_DECISIONS.md`（按需）
-  - `DEVELOPMENT_RULES.md`
-  - `QUALITY_GATE.md`
-  - `references/`
+  - `project-docs/PRD.md`
+  - `project-docs/ARCHITECTURE.md`
+  - `project-docs/PROJECT_STATE.md`
+  - `project-docs/PAGE_FRAME.md`（按需）
+  - `project-docs/TECH_DECISIONS.md`（按需）
+  - `project-docs/DEVELOPMENT_RULES.md`
+  - `project-docs/QUALITY_GATE.md`
+  - `project-docs/references/`
 - 小任务：
-  - 至少保留一份状态摘要或 `PROJECT_STATE.md` 更新，覆盖目标、范围、风险、验证结果、下一步。
+  - 至少保留一份状态摘要或 `project-docs/PROJECT_STATE.md` 更新，覆盖目标、范围、风险、验证结果、下一步。
