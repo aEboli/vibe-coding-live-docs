@@ -125,9 +125,15 @@
 - 最少要产出什么：
   - `project-docs/PRD.md` 的 `Draft` 版本。
   - 初版验收标准和待确认项。
+- 推荐子技能：
+  - 当输入来源是 feature idea、meeting notes、stakeholder ask、rough brief、research summary 时，优先用 `$prd-creater` 产出结构化首版 PRD。
+  - 当已经有成熟 PRD、小任务只需要最小状态摘要、或用户不想要 Notion 风格输出时，不强制调用 `$prd-creater`。
 - 生命周期要求：
   - 到“核心流程稳定”时，把初版验收标准收敛到 `Confirmed`。
   - 到“准备发布”时，补实际落地偏差到 `As-Built`。
+- 职责边界：
+  - `$prd-creater` 负责把零散输入整理成结构化 PRD 草稿，并借 Notion 官方/模板体系补骨架。
+  - `vibe-coding-live-docs` 负责把草稿映射到 `project-docs/PRD.md`，补生命周期字段、页面摘要，并继续和架构/状态文档联动。
 
 #### 步骤 3：先定视觉方向，再逐步收敛页面框架
 
@@ -232,6 +238,9 @@
 - `Draft` 至少包含：
   - 目标用户
   - 核心目标
+  - Goals and KPIs / 目标与指标
+  - Constraints and assumptions / 约束与假设
+  - Dependencies / 依赖
   - 核心流程
   - 初版完成标准
   - 视觉方向

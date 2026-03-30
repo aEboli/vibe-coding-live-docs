@@ -12,9 +12,11 @@ Keep project docs alive from the first sketch to the shipped system. This skill 
 ## Quick Start
 
 - Create `project-docs/PRD.md`, `project-docs/ARCHITECTURE.md`, and `project-docs/PROJECT_STATE.md` as `Draft` skeletons at project start.
+- If the PRD input is a feature idea, rough brief, meeting notes, stakeholder ask, or research summary, use `**RECOMMENDED SUB-SKILL:** $prd-creater` first to draft a structured PRD, then map it into `project-docs/PRD.md`.
 - For UI or multi-page work, also create `project-docs/PAGE_FRAME.md`.
 - For non-trivial stack choices, also create `project-docs/TECH_DECISIONS.md`.
 - Use `project-docs/PROJECT_STATE.md` as the document-sync control tower: track doc debt, latest confirmations, next refill node, and frozen decisions.
+- If a mature PRD already exists, the task is small, or the user does not want a Notion-style PRD, skip `$prd-creater` and maintain the docs directly.
 - Update docs on milestones and key events instead of waiting until release.
 
 ## Lifecycle
@@ -58,11 +60,21 @@ Update the right docs when these triggers happen:
 ## Workflow
 
 1. Detect whether the task is a new project, a large feature, or a drifting documentation cleanup.
-2. Create or repair the minimum living-doc skeleton first.
-3. Put uncertain information in `Draft` instead of pretending it is final.
-4. Promote sections to `Confirmed` when real implementation or decisions stabilize them.
-5. Promote key docs to `As-Built` before release, handoff, or major milestone closeout.
-6. Keep decision history in `project-docs/TECH_DECISIONS.md` and UI structure in `project-docs/PAGE_FRAME.md` so `project-docs/PRD.md` and `project-docs/ARCHITECTURE.md` stay readable.
+2. If the PRD starts from rough source material, use `**RECOMMENDED SUB-SKILL:** $prd-creater` to draft the first-pass PRD.
+3. Create or repair the minimum living-doc skeleton first.
+4. Put uncertain information in `Draft` instead of pretending it is final.
+5. Promote sections to `Confirmed` when real implementation or decisions stabilize them.
+6. Promote key docs to `As-Built` before release, handoff, or major milestone closeout.
+7. Keep decision history in `project-docs/TECH_DECISIONS.md` and UI structure in `project-docs/PAGE_FRAME.md` so `project-docs/PRD.md` and `project-docs/ARCHITECTURE.md` stay readable.
+
+## PRD Drafting Boundary
+
+- Use `$prd-creater` when the input is messy and the main need is turning it into a structured first-pass PRD.
+- Use `vibe-coding-live-docs` to place that PRD in `project-docs/PRD.md`, add lifecycle metadata, and keep it aligned with architecture, page frame, and project state.
+- Do not force `$prd-creater` when:
+  - a mature PRD already exists
+  - the task only needs a small status update
+  - the user does not want a Notion-style PRD flow
 
 ## Resources
 

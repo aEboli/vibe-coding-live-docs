@@ -75,6 +75,22 @@ flowchart LR
 | `project-docs/PAGE_FRAME.md` | 页面清单、导航、关键状态、页面跳转 |
 | `project-docs/TECH_DECISIONS.md` | 技术选型、放弃方案、约束原因、确认日期 |
 
+## 联合使用 `$prd-creater`
+
+- 当输入是 feature idea、rough brief、meeting notes、stakeholder ask、research summary 时，先用 `$prd-creater` 把零散输入整理成结构化首版 PRD。
+- 然后再用 `$vibe-coding-live-docs` 把内容落到 `project-docs/PRD.md`，并继续维护 `Draft / Confirmed / As-Built` 生命周期。
+- 如果已经有成熟 PRD、小任务只需最小状态摘要、或你不想要 Notion 风格输出，可以直接跳过 `$prd-creater`。
+
+推荐组合：
+
+```text
+Use $prd-creater to turn this feature idea into a structured first-pass PRD, then use $vibe-coding-live-docs to place it into project-docs/PRD.md and continue the living-doc workflow.
+```
+
+```text
+Use $prd-creater to turn these meeting notes into a PRD draft, then use $vibe-coding-live-docs to sync it into project-docs/PRD.md with lifecycle metadata and linked project docs.
+```
+
 ## 安装
 
 ### Codex
@@ -211,6 +227,22 @@ Documentation should not be treated as a binary state of "written" or "missing."
 | `project-docs/PROJECT_STATE.md` | Current slice, document debt, latest confirmations, next refill point |
 | `project-docs/PAGE_FRAME.md` | Page inventory, navigation, key states, transitions |
 | `project-docs/TECH_DECISIONS.md` | Chosen options, rejected options, constraints, decision dates |
+
+### Using It With `$prd-creater`
+
+- Use `$prd-creater` first when the source material is messy and the main need is a structured first-pass PRD.
+- Then use `$vibe-coding-live-docs` to place that content into `project-docs/PRD.md` and keep it aligned with architecture, page frame, and project state.
+- Skip `$prd-creater` when a mature PRD already exists, the task is too small, or the user does not want a Notion-style PRD flow.
+
+Recommended combo prompts:
+
+```text
+Use $prd-creater to turn this feature idea into a structured first-pass PRD, then use $vibe-coding-live-docs to place it into project-docs/PRD.md and continue the living-doc workflow.
+```
+
+```text
+Use $prd-creater to turn these meeting notes into a PRD draft, then use $vibe-coding-live-docs to sync it into project-docs/PRD.md with lifecycle metadata and linked project docs.
+```
 
 ### Install
 
